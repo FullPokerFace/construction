@@ -1,0 +1,44 @@
+@import "./settings";
+
+@mixin btn-primary{
+    color: white;
+    padding: $s $m ;
+    border-radius: 200px;
+    font-size: $m;
+    font-weight: 500;
+    margin: $xs;
+    cursor: pointer;
+}
+
+.btn-primary-hollow{
+    @include btn-primary;
+    border: solid 2px $primary-color;
+    background-color: black;
+    transition: all .2s;
+
+    &:hover{
+        background-color: $primary-color;
+        border: solid 2px transparent;
+    }
+    &.s{
+        font-size: $s;
+        padding: $xs $s ;
+    }    
+}
+
+.btn-primary{
+    @include btn-primary;
+    background-color: $primary-color;
+    border: solid 2px transparent;
+    transition: all .2s;
+
+    &:hover{
+        border: solid 2px $primary-color;
+        background-color: black;
+    }
+    &.s{
+        font-size: $s;
+        padding: $xs $s ;
+    }
+}
+

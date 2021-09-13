@@ -1,0 +1,49 @@
+@import url("https://fonts.googleapis.com/css2?family=Poppins:wght@400;500;700&display=swap");
+.btn-primary-hollow {
+  color: white;
+  padding: 16px 24px;
+  border-radius: 200px;
+  font-size: 24px;
+  font-weight: 500;
+  margin: 8px;
+  cursor: pointer;
+  border: solid 2px #00b472;
+  background-color: black;
+  -webkit-transition: all .2s;
+  transition: all .2s;
+}
+
+.btn-primary-hollow:hover {
+  background-color: #00b472;
+  border: solid 2px transparent;
+}
+
+.btn-primary-hollow.s {
+  font-size: 16px;
+  padding: 8px 16px;
+}
+
+.btn-primary {
+  color: white;
+  padding: 16px 24px;
+  border-radius: 200px;
+  font-size: 24px;
+  font-weight: 500;
+  margin: 8px;
+  cursor: pointer;
+  background-color: #00b472;
+  border: solid 2px transparent;
+  -webkit-transition: all .2s;
+  transition: all .2s;
+}
+
+.btn-primary:hover {
+  border: solid 2px #00b472;
+  background-color: black;
+}
+
+.btn-primary.s {
+  font-size: 16px;
+  padding: 8px 16px;
+}
+/*# sourceMappingURL=elements.css.map */
