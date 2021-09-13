@@ -26,7 +26,7 @@ body {
   display: -ms-flexbox;
   display: flex;
   color: white;
-}
+} 
 
 .header-container .header .logo {
   background: url("../resources/images/logo/logo_white.svg") no-repeat center;
