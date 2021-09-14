@@ -10,7 +10,7 @@ const setLoading = (delay = 200) => {
 export const swipeLeft = (width, btn) => {
     if(!isLoading){
         setLoading();
-        const showcaseImage = btn.closest('.showcase').querySelector('.showcase-image');
+        const showcaseImage = btn.closest('.showcase').querySelector('.showcase-image-container');
         const transformMatrix = window.getComputedStyle(showcaseImage).transform;
         if (transformMatrix === 'none') return;
         const xTransform = parseInt(transformMatrix.split(',')[4]);
@@ -22,7 +22,7 @@ export const swipeLeft = (width, btn) => {
 export const swipeRight = (width, btn) => {
     if(!isLoading){
         setLoading();
-        const showcaseImage = btn.closest('.showcase').querySelector('.showcase-image');
+        const showcaseImage = btn.closest('.showcase').querySelector('.showcase-image-container');
         const transformMatrix = window.getComputedStyle(showcaseImage).transform;
         const imageCount = showcaseImage.querySelectorAll('img').length;
         const showcaseWidth = parseInt(window.getComputedStyle(showcaseImage).width) * imageCount;

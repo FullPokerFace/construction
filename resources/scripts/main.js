@@ -2,7 +2,7 @@ import { swipeLeft, swipeRight } from './utils.js'
 // Element Selectors
 
 
-const showcaseImages = document.querySelector('.showcase-image');
+const showcaseImages = document.querySelector('.showcase-image-container');
 
 const menuIcon = document.querySelector('.menu-icon');
 const mobileMenu = document.querySelector('.mobile-menu');
@@ -29,8 +29,8 @@ footer.innerHTML =
 
 // Showcase
 
-const showCaseArrowLeftList = document.querySelectorAll('.showcase-left-arrow');
-const showCaseArrowRightList = document.querySelectorAll('.showcase-right-arrow');
+const showCaseArrowLeftList = document.querySelectorAll('.showcase-arrow.left');
+const showCaseArrowRightList = document.querySelectorAll('.showcase-arrow.right');
 
 showCaseArrowLeftList.forEach(arrow=>{
     arrow.addEventListener('click',()=>{

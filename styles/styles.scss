@@ -94,6 +94,7 @@ body{
     .hero{
         padding: $m;
         display: flex;
+        width: 100%;
         flex-direction:column;
         justify-content: center;
         align-items: center;
@@ -121,31 +122,34 @@ body{
 
             .title{
                 font-size: $m;
-
+                filter: drop-shadow(0 0 2px #0005);
             }
             .subtitle{
                 font-size: $s;
                 font-weight: 400;
+                filter: drop-shadow(0 0 2px #0005);
             }            
 
-            .arrow-container{
-                position: absolute;
-                display: flex;
-                width: 100%;
-                top: 50%;
-                transform: translateY(-50%);
-                justify-content: space-between;
+            .showcase-arrow{
                 font-size: $m;
                 font-weight: 400;
+                position: absolute;
+                top: 50%;
+                transform: translateY(-50%);
+                padding: $m;
+                cursor: pointer;
                 z-index: 10;
 
-                span{
-                    padding: $m;
-                    cursor: pointer;
-                }
-            }
+                &.right{
+                right: 0;
 
-            .showcase-image{
+                }
+                &.left{
+                    left: 0;
+                }
+            }              
+
+            .showcase-image-container{
                 display: flex;
                 width: 100%;
                 position: absolute;
@@ -155,6 +159,7 @@ body{
 
             img{
                 width: 100%;
+                height: 100%;
             }
         }
     }
